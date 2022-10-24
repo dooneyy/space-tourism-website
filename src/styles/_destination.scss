@@ -1,0 +1,81 @@
+.destination {
+  background: url('../assets/destination/background-destination-desktop.jpg');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 40px;
+
+  &-container {
+    padding: 76px 76px 76px 166px;
+    color: white;
+
+    &_prompt {
+      margin-bottom: 64px;
+      span {
+        font-weight: 700;
+        opacity: 0.25;
+        margin-right: 28px;
+      }
+    }
+
+    &_body {
+      display: flex;
+      justify-content: center;
+
+      &-details {
+        width: 445px;
+        margin-left: 3rem;
+
+        .details-nav {
+          margin-bottom: 37px;
+          ul {
+            display: flex;
+            align-items: center;
+
+            a {
+              text-decoration: none;
+              margin-right: 36px;
+              position: relative;
+            }
+          }
+        }
+
+        .planet {
+          &-name {
+            margin-bottom: 14px;
+          }
+          &-desc {
+            margin-bottom: 54px;
+          }
+        }
+      }
+    }
+  }
+}
+
+%link-style {
+  display: block;
+  position: absolute;
+  content: '';
+  z-index: 99;
+  bottom: -12px;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  height: 3px;
+  width: 100%;
+}
+
+.activeLink::before {
+  @extend %link-style;
+}
+
+.hoverLink {
+  &:hover {
+    &::before {
+      @extend %link-style;
+      opacity: 0.5;
+    }
+  }
+}

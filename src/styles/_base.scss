@@ -25,12 +25,14 @@ body {
    @extend .heading;
   font-size: 150px;
   line-height: 172px;
+  text-transform: uppercase
 }
 
 .heading-2 {
    @extend .heading;
   font-size: 100px;
   line-height: 115px;
+  text-transform: uppercase
 }
 
 .heading-3 {

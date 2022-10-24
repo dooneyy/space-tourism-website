@@ -16,11 +16,13 @@
 .heading-1 {
   font-size: 150px;
   line-height: 172px;
+  text-transform: uppercase;
 }
 
 .heading-2 {
   font-size: 100px;
   line-height: 115px;
+  text-transform: uppercase;
 }
 
 .heading-3 {
@@ -208,5 +210,87 @@
   color: #0b0d17;
   border-radius: 50%;
   text-decoration: none;
+}
+
+.destination {
+  background: url("../assets/destination/background-destination-desktop.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 40px;
+}
+
+.destination-container {
+  padding: 76px 76px 76px 166px;
+  color: white;
+}
+
+.destination-container_prompt {
+  margin-bottom: 64px;
+}
+
+.destination-container_prompt span {
+  font-weight: 700;
+  opacity: 0.25;
+  margin-right: 28px;
+}
+
+.destination-container_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.destination-container_body-details {
+  width: 445px;
+  margin-left: 3rem;
+}
+
+.destination-container_body-details .details-nav {
+  margin-bottom: 37px;
+}
+
+.destination-container_body-details .details-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.destination-container_body-details .details-nav ul a {
+  text-decoration: none;
+  margin-right: 36px;
+  position: relative;
+}
+
+.destination-container_body-details .planet-name {
+  margin-bottom: 14px;
+}
+
+.destination-container_body-details .planet-desc {
+  margin-bottom: 54px;
+}
+
+.activeLink::before, .hoverLink:hover::before {
+  display: block;
+  position: absolute;
+  content: '';
+  z-index: 99;
+  bottom: -12px;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  height: 3px;
+  width: 100%;
+}
+
+.hoverLink:hover::before {
+  opacity: 0.5;
 }
 /*# sourceMappingURL=main.css.map */
