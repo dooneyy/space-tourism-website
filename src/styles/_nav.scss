@@ -1,0 +1,54 @@
+.navigation {
+  height: 96px;
+  margin-left: 55px;
+  margin-bottom: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    padding: 0 165px 0 123px;
+
+    a {
+      text-decoration: none;
+      margin-right: 48px;
+      position: relative;
+      padding: 38px 0 38px 0;
+
+      span {
+        margin-right: 12px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+%line-style {
+  display: block;
+  position: absolute;
+  content: '';
+  z-index: 99;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  height: 3px;
+  width: 100%;
+}
+
+.active::before {
+  @extend %line-style;
+}
+
+.hover {
+  &:hover {
+    &::before {
+      @extend %line-style;
+      opacity: 0.5;
+    }
+  }
+}
