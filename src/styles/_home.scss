@@ -1,8 +1,39 @@
-.home{
-    background: url('../assets/home/background-home-desktop.jpg');
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 40px;
+.home {
+  background: url('../assets/home/background-home-desktop.jpg');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 40px;
+
+  &-container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25rem 165px 131px 165px;
+    color: $white-color;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &_travel {
+      width: 450px;
+      &-heading {
+        margin: 24px 0;
+      }
+    }
+
+    &_explore {
+      width: 274px;
+      height: 274px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $white-color;
+      color: $black-color;
+      border-radius: 50%;
+      text-decoration: none;
+    }
+  }
 }

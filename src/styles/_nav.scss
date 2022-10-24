@@ -1,10 +1,15 @@
 .navigation {
+  max-width: 1440px;
+  margin: 0 auto;
   height: 96px;
-  margin-left: 55px;
-  margin-bottom: 55px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width:1440px) {
+    margin-left: 55px;
+  }
 
   &-item {
     display: flex;
@@ -12,6 +17,20 @@
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.7742px);
     padding: 0 165px 0 123px;
+    position: relative;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: '';
+      z-index: 99;
+      bottom: 46px;
+      left: -22em;
+      background: #ffffff;
+      height: 1px;
+      width: 50%;
+      opacity: 0.25;
+    }
 
     a {
       text-decoration: none;
