@@ -96,6 +96,7 @@ const Destination = () => {
         );
     }
   };
+
   return (
     <div className="destination">
       <Navigation />
@@ -147,6 +148,26 @@ const Destination = () => {
             <div className="planet">
               {headingText(activeLinks)}
               {bodyText(activeLinks)}
+              <div className="planet_line"></div>
+              <div className="planet-information">
+                <div className='mr-68'>
+                  <p className="subheading-2 info-heading">AVG. DISTANCE</p>
+                  <p className="subheading-1">
+                    {activeLinks === 'moon' && '384,400 km'}
+                    {activeLinks === 'mars' && '225 mil. km'}
+                    {activeLinks === 'europa' && '628 mil. km'}
+                    {activeLinks === 'titan' && '1.6 bil. km'}</p>
+                </div>
+                <div>
+                  <p className="subheading-2 info-heading">Est. travel time</p>
+                  <p className="subheading-1">
+                  {activeLinks === 'moon' && '3 days'}
+                  {activeLinks === 'mars' && '9 months'}
+                  {activeLinks === 'europa' && '3 years'}
+                  {activeLinks === 'titan' && ' 7 years'}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

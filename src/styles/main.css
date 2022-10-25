@@ -247,7 +247,7 @@
 
 .destination-container_body-details {
   width: 445px;
-  margin-left: 3rem;
+  margin-left: 8rem;
 }
 
 .destination-container_body-details .details-nav {
@@ -275,6 +275,32 @@
 
 .destination-container_body-details .planet-desc {
   margin-bottom: 54px;
+}
+
+.destination-container_body-details .planet_line {
+  margin-top: 54px;
+  margin-bottom: 28px;
+  width: 100%;
+  height: 1px;
+  background: #383B4B;
+}
+
+.destination-container_body-details .planet-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+}
+
+.destination-container_body-details .planet-information .mr-68 {
+  margin-right: 68px;
+}
+
+.destination-container_body-details .planet-information .info-heading {
+  margin-bottom: 12px;
 }
 
 .activeLink::before, .hoverLink:hover::before {
